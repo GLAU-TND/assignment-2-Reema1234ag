@@ -7,5 +7,18 @@
 package problem1.main;
 // executable class
 
+import problem1.mybst.MyBinarySearchTree;
 public class MyMain {
+    public static void main(String[] args) {
+        MyBinarySearchTree obj = new MyBinarySearchTree();
+        obj.insert(1);
+        obj.insert(5);
+        obj.insert(10);
+        obj.insert(4);
+        obj.insert(6);
+        System.out.println("ALL LEFT NODES");
+        obj.printLeftNode();
+        System.out.println("count of nodes having left nodes");
+        obj.countNotLeft();
+    }
 }
